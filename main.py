@@ -24,11 +24,23 @@ if n > k:
     while n > k:
         n = n - k
         cnt = cnt + 1
-    print("// = ", cnt)
+    print("N // K = ", cnt)
+    while n > k:
+        n = n - k
+    print("N % K = ", n)
 else:
-    while k > n:
-        k = k - n
-    print("% = ", k)
+    if k > n:
+        cnt = 0
+        while k > n:
+            k = k - n
+            cnt = cnt + 1
+        print("N // K = ", cnt)
+        while k > n:
+            k = k - n
+        print("N % K = ", k)
+if n == k:
+    print("N % K = 0")
+    print("N // K= 1")
 
 
 #1 infa 25.1
